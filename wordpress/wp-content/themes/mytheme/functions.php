@@ -77,3 +77,9 @@ class bootstrap_5_wp_nav_menu_walker extends Walker_Nav_Menu {
 
     
 }
+
+function add_cors_headers() {
+    header("Access-Control-Allow-Origin: *");
+}
+
+add_action('init', 'add_cors_headers');

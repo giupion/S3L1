@@ -3,6 +3,7 @@
 //con ultimi articoli su letteura non dovrebbe farti vedere page ma è lunica e no nfa altrimenti
 //è il template di tutte le pagine che vado a creare con wordpress
 //se clicclo su categorie mi manda su homepage quindi creo archive
+//fdhjsdbfkdjbs
 ?>
 
 <div class="container">

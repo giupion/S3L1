@@ -78,8 +78,8 @@ class bootstrap_5_wp_nav_menu_walker extends Walker_Nav_Menu {
     
 }
 
-function add_cors_headers() {
-    header("Access-Control-Allow-Origin: *");
+add_filter( 'rest_user_query' , 'custom_rest_user_query' );
+function custom_rest_user_query( $prepared_args, $request = null ) {
+  unset($prepared_args['has_published_posts']);
+  return $prepared_args;
 }
-
-add_action('init', 'add_cors_headers');

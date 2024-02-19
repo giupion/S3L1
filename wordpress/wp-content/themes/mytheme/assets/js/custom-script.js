@@ -11,6 +11,8 @@ document.addEventListener('DOMContentLoaded', () => {
         console.error('Error fetching data:', error);
       }
     };
+
+    
   
     const displayUsers = (users) => {
       const appElement = document.getElementById('app');
@@ -19,7 +21,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const userElement = document.createElement('div');
         userElement.classList.add('user');
   
-        const nameElement = document.createElement('h2');
+        const nameElement = document.createElement('h1');
         nameElement.textContent = user.name;
   
         const emailElement = document.createElement('p');

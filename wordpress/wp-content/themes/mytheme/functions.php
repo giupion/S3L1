@@ -77,7 +77,7 @@ class bootstrap_5_wp_nav_menu_walker extends Walker_Nav_Menu {
 
     
 }
-
+//far apparire tutti itenti
 add_filter( 'rest_user_query' , 'custom_rest_user_query' );
 function custom_rest_user_query( $prepared_args, $request = null ) {
   unset($prepared_args['has_published_posts']);
